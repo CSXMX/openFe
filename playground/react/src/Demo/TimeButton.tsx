@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from "react";
-// import usePasteExcel from "../../../src/usePasteExcel";
+import TimeButton from "../../../../src/react/TimeButton";
 
 export type ExcelData = Array<Array<string>>;
 
 const Page = () => {
-  // const { excelData } = usePasteExcel();
-  return <div>复制一个excel文件里内容，在此页面粘贴即可</div>;
+  const onAction = () => {
+    alert("test");
+  };
+  return (
+    <>
+      <TimeButton text="操作" onAction={onAction}></TimeButton>
+    </>
+  );
 };
 export default Page;

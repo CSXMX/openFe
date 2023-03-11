@@ -20,8 +20,8 @@ export default () => (
     >
       <h1 className="logo">openFe-Test</h1>
       <Menu theme="light" mode="inline" defaultSelectedKeys={["4"]}>
-        <Menu.Item key="PasteExcel">
-          <Link to="/PasteExcel">PasteExcel</Link>
+        <Menu.Item key="TimeButton">
+          <Link to="/TimeButton">时间按钮</Link>
         </Menu.Item>
       </Menu>
     </Sider>
@@ -33,8 +33,9 @@ export default () => (
           minHeight: `calc(100vh - 64px - 24px * 2)`,
           background: "#fff",
         }}
-      ></Content>
-      <Router></Router>
+      >
+        <Router></Router>
+      </Content>
     </Layout>
   </Layout>
 );
