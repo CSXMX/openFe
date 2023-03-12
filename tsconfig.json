@@ -1,15 +1,26 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "lib": ["ES6","DOM"] ,
+    "lib": [
+      "ES6",
+      "DOM"
+    ],
     "module": "esnext",
     "declaration": true,
     "moduleResolution": "node",
-    "esModuleInterop":true,
+    "esModuleInterop": true,
+    "outDir": "",
+    "declarationDir": "types",
     "paths": {
-      "@/*": ["./src/*"],
-  }
+      "@/*": [
+        "./src/*"
+      ],
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/**"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/**"
+  ]
 }

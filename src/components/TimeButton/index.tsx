@@ -62,6 +62,7 @@ const TimeButton: FC<TimeButtonProps> = ({
     setDisabled(true);
     const pageRestTime = getPageRestTime();
     restTime.current = pageRestTime;
+    setFormatTime(formatRestTime(restTime.current));
     timer.current = setTimeout(() => {
       handleTimer();
     }, 0);
