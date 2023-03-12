@@ -7,8 +7,9 @@
     "es",
     "cjs"
   ],
-  "main": "dist/cjs/index.js",
+  "main": "dist/es/index.js",
   "module": "dist/es/index.js",
+  "types": "dist/es/types/index.d.ts",
   "scripts": {
     "dev": "cross-env NODE_ENV=development rollup --config",
     "build": "cross-env NODE_ENV=production rollup --config",
