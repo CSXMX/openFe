@@ -1,2 +1,2 @@
-export { default as TimeButton } from "./components/TimeButton/index"
-export type { ButtonProps } from "./components/TimeButton/index"
+export { default as TimeButton } from "./components/TimeButton"
+export type { TimeButtonProps } from "./components/TimeButton"
