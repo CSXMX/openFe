@@ -1,12 +1,13 @@
 {
   "name": "openfe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Develop some common components or hooks that can be used in daily front-end development",
   "sideEffects": false,
   "files": [
     "es",
     "cjs",
-    "dist/es/types/index.d.ts"
+    "dist/es/types/index.d.ts",
+    "dist/cjs/types/index.d.ts"
   ],
   "main": "dist/es/index.js",
   "module": "dist/es/index.js",

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import TimeButton from "../../../../src/components/TimeButton";
-// import { TimeButton } from "openfe";
-export type ExcelData = Array<Array<string>>;
+// import TimeButton from "../../../../src/components/TimeButton";
+import { TimeButton } from "openfe";
 
 const Page = () => {
   const onAction = () => {};

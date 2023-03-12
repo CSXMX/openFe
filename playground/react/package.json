@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "antd": "^4.19.5",
-    "openfe": "^0.1.3",
+    "openfe": "^1.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
