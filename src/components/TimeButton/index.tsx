@@ -15,8 +15,8 @@ const TimeButton: FC<TimeButtonProps> = ({
   placement = "top",
   onAction,
   h = 0,
-  m = 10,
-  s = 0,
+  m = 0,
+  s = 10,
 }) => {
   const [disabled, setDisabled] = useState(false);
   const [formatTime, setFormatTime] = useState("");
@@ -47,7 +47,7 @@ const TimeButton: FC<TimeButtonProps> = ({
   const handleTimer = () => {
     if (restTime.current > 1000) {
       restTime.current -= 1000;
-      setFormatTime(formatRestTime(restTime.current - 1000));
+      setFormatTime(formatRestTime(restTime.current));
       timer.current = setTimeout(() => {
         handleTimer();
       }, 1000);
@@ -64,7 +64,7 @@ const TimeButton: FC<TimeButtonProps> = ({
     restTime.current = pageRestTime;
     timer.current = setTimeout(() => {
       handleTimer();
-    }, 1000);
+    }, 0);
   };
   /**
    * @desc 页面初始化，
