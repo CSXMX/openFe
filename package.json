@@ -1,6 +1,6 @@
 {
   "name": "openfe",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Develop some common components or hooks that can be used in daily front-end development",
   "sideEffects": false,
   "files": [

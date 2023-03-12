@@ -14,9 +14,8 @@ const TimeButton: FC<TimeButtonProps> = ({
   text = "",
   placement = "top",
   onAction,
-  h = 0,
-  m = 0,
-  s = 10,
+  m = 1,
+  s = 0,
 }) => {
   const [disabled, setDisabled] = useState(false);
   const [formatTime, setFormatTime] = useState("");
@@ -40,7 +39,7 @@ const TimeButton: FC<TimeButtonProps> = ({
     const now = new Date().getTime();
     window.localStorage.setItem(
       "restTime",
-      String(now + 3600 * h * 1000 + 60 * m * 1000 + s * 1000)
+      String(now + 60 * m * 1000 + s * 1000)
     );
   };
   /** @desc 开启循环定时任务 */

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-// import TimeButton from "../../../../src/components/TimeButton";
-import { TimeButton } from "openfe";
+import TimeButton from "../../../../src/components/TimeButton";
+// import { TimeButton } from "openfe";
 export type ExcelData = Array<Array<string>>;
 
 const Page = () => {
   const onAction = () => {};
   return (
     <>
-      <TimeButton text="操作" onAction={onAction}></TimeButton>
+      <TimeButton text="操作" onAction={onAction} m={1} s={10}></TimeButton>
     </>
   );
 };
