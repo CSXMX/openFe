@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import TimeButton from "../../../../src/react/TimeButton";
+import TimeButton from "../../../../src/components/TimeButton";
 
 export type ExcelData = Array<Array<string>>;
 
