@@ -26,8 +26,8 @@
   "author": "Long Q",
   "license": "MIT",
   "peerDependencies": {
-    "react": ">=16.8.1",
-    "antd": ">=4.0.0"
+    "antd": ">=4.0.0",
+    "react": ">=16.8.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
@@ -40,6 +40,7 @@
     "@types/react": "^17.0.37",
     "antd": "^4.18.0",
     "cross-env": "^7.0.3",
+    "crypto-js": "^4.1.1",
     "react": "^17.0.2",
     "rollup": "^2.62.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -54,6 +55,5 @@
     "not dead",
     "IE 11",
     "not IE 10"
-  ],
-  "dependencies": {}
+  ]
 }

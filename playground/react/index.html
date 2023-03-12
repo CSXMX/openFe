@@ -6,44 +6,10 @@
   <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>openFe</title>
-  <style>
-    .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      /* 3 列布局 */
-      grid-gap: 10px;
-      /* 列间距 */
-    }
-
-    /* 根据 data-column 属性值指定元素所在列 */
-    .item[data-column="1"] {
-      grid-column: 1;
-    }
-
-    .item[data-column="2"] {
-      grid-column: 2;
-    }
-
-    .item[data-column="3"] {
-      grid-column: 3;
-    }
-  </style>
 </head>
 
 <body>
   <div id="root"></div>
-  <div class="container">
-    <div class="item" data-column="2">Item 1</div>
-    <div class="item" data-column="1">Item 2</div>
-    <div class="item" data-column="3">Item 3</div>
-    <div class="item" data-column="1">Item 4</div>
-    <div class="item" data-column="2">Item 5</div>
-    <div class="item" data-column="3">Item 6</div>
-    <div class="item" data-column="3">Item 7</div>
-    <div class="item" data-column="2">Item 8</div>
-    <div class="item" data-column="1">Item 9</div>
-  </div>
-
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
